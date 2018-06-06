@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -44,5 +45,7 @@ namespace RTX.Domain.Entites
 
         public int AddressId { set; get; }
         public Address Address { set; get; }
+
+        public virtual ICollection<Item> Items { set; get; }
     }
 }

@@ -15,5 +15,7 @@ namespace RTX.Domain.Entites
         public decimal Lat { set; get; }
 
         public virtual ICollection<User> Users { set; get; }
+        public virtual ICollection<Item> Items { set; get; }
+
     }
 }
